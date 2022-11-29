@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var student = {
+            rollno: 1,
+            name: "Nikhil",
+            sub1: 65,
+            sub2: 80,
+            sub3: 55,
+
+            print: function () {
+                return "Student details" + this.rollno + " " + this.name;
+            },
+            calculatemark: function () {
+                var total = this.sub1 + this.sub2 + this.sub3;
+                var per = total / 3;
+                return "marks"+ total+" "+per;
+            }
+        };
+        console.log(student.print());
+        console.log(student.calculatemark());
+        
+
+    </script>
+
+</body>
+</html>

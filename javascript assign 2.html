@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body
+      <div id="div1">
+
+      </div>
+    <script>
+        var product = [
+        {
+            id: 1,
+            name: "Dell",
+            price:30000
+
+        },
+        {
+            id: 2,
+            name: "Lenova",
+            price:35000
+
+        },
+        {
+            id: 3,
+            name: "Vivo",
+            price:45000
+
+        }
+]
+        console.log(product);
+        var data = "<table border='1'><tr><th>id</th><th>name</th><th>price</th></tr>";
+        for (var i = 0; i < product.length; i++) {
+            data += "<tr><td>" + product[i].id + "</td><td>" + product[i].name + "</td><td>" + product[i].price + "</td></tr>";
+    
+}
+        data += "</table>";
+
+        document.getElementById("div1").innerHTML = data;
+       
+    </script>
+
+</body>
+</html>
